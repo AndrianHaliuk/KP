@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Autism care day",
+    "date": "15th Nov 2022",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
+    "image": "img/autism.webp"
+  },
+  {
+    "title": "Down syndrome outreach",
+    "date": "15th Nov 2022",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
+    "image": "img/kid.webp"
+  },
+  {
+    "title": "Caring for children with cerebral palsy",
+    "date": "15th Nov 2022",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
+    "image": "img/celebral.webp"
+  }
+]
