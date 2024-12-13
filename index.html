@@ -13,6 +13,42 @@
   <title>lagerthani</title>
 </head>
 <body>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="close-container">
+        <svg id="closeModal" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="1.5"/>
+        </svg>
+        </div>
+      <h2>Join as a volunteer</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique. </p>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Id</label>
+            <input type="email" id="contact-email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your Message"></textarea>
+        </div>
+        <div class="button-wrapper">
+            <button type="submit" class="primary-btn">Send message</button>
+        </div>
+    </form>
+    </div>
+  </div>
   <nav class="site-nav" id="navbar">
     <div class="nav-container">
       <a href="index.html"><img src="img/logo.webp" alt="Логотип" class="logo" loading="lazy"></a>

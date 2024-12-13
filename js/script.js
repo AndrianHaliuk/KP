@@ -88,10 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error("Error:", error));
 });
 
-// Отримуємо контейнер, куди додаватимемо блоки
 const contentContainer = document.getElementById('news-container');
-
-// Функція для створення HTML-блоку новини
 function createNews(item) {
   return `
     <div class="news">
@@ -105,11 +102,9 @@ function createNews(item) {
   `;
 }
 
-// Завантаження JSON-даних
 fetch('json/news.json')
   .then(response => response.json())
   .then(data => {
-    // Проходимося по кожному об'єкту і додаємо його в контейнер
     data.forEach(item => {
       contentContainer.innerHTML += createNews(item);
     });
@@ -119,3 +114,24 @@ fetch('json/news.json')
   window.addEventListener("load", () => {
     document.body.setAttribute("data-loaded", "true");
   });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("modal");
+  const closeModal = document.getElementById("closeModal");
+  const isVisited = localStorage.getItem("isVisited");
+
+  if (!isVisited) {
+    modal.style.display = "flex";
+    localStorage.setItem("isVisited", "true");
+  }
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
