@@ -40,7 +40,9 @@ window.addEventListener("scroll", function() {
 new Swiper('.swiper', {
   loop: true,
   spaceBetween: 24,
-  
+  autoplay: {
+    delay: 5000,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
