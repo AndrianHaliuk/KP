@@ -22,14 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
   navSlide();
 });
 
-// Скрипт для приховування/показування navbar під час прокрутки
 let lastScrollTop = 0;
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", function() {
   const scrollTop = document.documentElement.scrollTop;
   
-  // Якщо прокрутка вниз — ховаємо navbar, якщо вгору — показуємо
   if (scrollTop > lastScrollTop) {
     navbar.style.top = "-87px";
   } else {
