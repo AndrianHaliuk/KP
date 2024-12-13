@@ -117,21 +117,29 @@ fetch('json/news.json')
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("modal");
-  const closeModal = document.getElementById("closeModal");
-  const isVisited = localStorage.getItem("isVisited");
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const closeModal = document.getElementById("closeModal");
+    const isVisited = localStorage.getItem("isVisited");
 
-  if (!isVisited) {
-    modal.style.display = "flex";
-    localStorage.setItem("isVisited", "true");
-  }
-  closeModal.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
+    const missClickWarning = document.getElementById("missClickWarning");
+    missClickWarning.id = "missClickWarning"; 
+  
+    if (!isVisited) {
+      modal.style.display = "flex";
+      localStorage.setItem("isVisited", "true");
     }
+  
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        missClickWarning.style.display = "block";
+        setTimeout(() => {
+          missClickWarning.style.display = "none";
+        }, 2000);
+      }
+    });
   });
-});

@@ -1465,6 +1465,21 @@ button {
   margin-bottom: -28px;
 }
 
+.miss-click-warning {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+  z-index: 1000;
+}
+
 @media screen and (min-width: 768px) {
   .modal-content h2 {
     font-size: 40px;

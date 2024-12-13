@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #333;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #666;
+            margin: 10px 0 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #FFC107;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #FFA000;
+        }
+
+        .secondary-button {
+            background-color: #F5F5F5;
+            color: #333;
+            margin-left: 10px;
+        }
+
+        .secondary-button:hover {
+            background-color: #E0E0E0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const validPaths = ["/", "/about", "/contact"]; // Список існуючих шляхів
+            const currentPath = window.location.pathname;
+
+            if (!validPaths.includes(currentPath)) {
+                document.body.innerHTML = `
+                    <div class="container">
+                        <h1>404</h1>
+                        <h2>Oops! Page Not Found</h2>
+                        <p>The page you're looking for doesn't exist or has been moved. Please use the navigation below to return to safety.</p>
+                        <div class="button-container">
+                            <a href="/" class="button">Go Home</a>
+                            <a href="/contact" class="button secondary-button">Contact Us</a>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Цей контент буде видно тільки якщо шлях валідний -->
+    <h1>Welcome to the valid page!</h1>
+</body>
+</html>
