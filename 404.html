@@ -1,95 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        .container {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 64px;
-            color: #333;
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #666;
-            margin: 10px 0 20px;
-        }
-
-        p {
-            font-size: 20px;
-            color: #555;
-            margin: 20px 0;
-        }
-
-        .button-container {
-            margin-top: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #FFC107;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #FFA000;
-        }
-
-        .secondary-button {
-            background-color: #F5F5F5;
-            color: #333;
-            margin-left: 10px;
-        }
-
-        .secondary-button:hover {
-            background-color: #E0E0E0;
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const validPaths = ["/", "/about", "/contact"]; // Список існуючих шляхів
-            const currentPath = window.location.pathname;
-
-            if (!validPaths.includes(currentPath)) {
-                document.body.innerHTML = `
-                    <div class="container">
-                        <h1>404</h1>
-                        <h2>Oops! Page Not Found</h2>
-                        <p>The page you're looking for doesn't exist or has been moved. Please use the navigation below to return to safety.</p>
-                        <div class="button-container">
-                            <a href="/" class="button">Go Home</a>
-                            <a href="/contact" class="button secondary-button">Contact Us</a>
-                        </div>
-                    </div>
-                `;
-            }
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Inclusive care for children with special needs">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel = "icon" type = "image/png" href = "img/i.png">
+  <title>lagerthani</title>
 </head>
 <body>
-    <!-- Цей контент буде видно тільки якщо шлях валідний -->
-    <h1>Welcome to the valid page!</h1>
+<nav class="site-nav" id="navbar">
+    <div class="nav-container">
+      <a href="index.html"><img src="img/logo.webp" alt="Логотип" class="logo" loading="lazy"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about-us.html">Про нас</a></li>
+        <li><a href="what-we-do.html">Що ми робимо</a></li>
+        <li><a href="media.html">Медіа</a></li>
+        <li><a href="contact.html" class="active">Контакти</a></li>
+      </ul>
+      <a class="nav-btn">Пожертвувати</a>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+</nav>
+<div class="container error-wrapper">
+    <h1>404</h1>
+    <h2>Ой! Сторінку не знайдено</h2>
+    <p>Сторінка, яку ви шукаєте, не існує або була переміщена. Скористайтеся навігацією нижче, щоб повернутися назад.</p>
+    <div class="button-container">
+        <a href="index.html" class="primary-btn">На головну</a>
+        <a href="contact.html" class="sec-btn">Зв'яжіться з нами</a>
+    </div>
+</div>
+<footer>
+    <div class="container">
+      <a href="index.html"><img src="img/logo-white.webp" alt="Логотип" class="logo" loading="lazy"></a>
+    <div class="footer-lists">
+      <div>
+        <p>Головна</p>
+        <ul>
+          <li><a href="about-us.html">Про нас</a></li>
+          <li><a href="media.html">Команда</a></li>
+          <li><a href="what-we-do.html">Що ми робимо</a></li>
+          <li><a href="contact.html">Більше</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Більше</p>
+        <ul>
+          <li>Проєкти</li>
+          <li>Події</li>
+          <li>Пожертвувати</li>
+          <li>Блог</li>
+        </ul>
+      </div>
+      <div>
+        <p>Зв'язатися</p>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+      <div class="subscribe">
+        <h2>Підпишіться, щоб отримувати останні оновлення</h2>
+        <form>
+          <input type="text" placeholder="Ваш email" id="email">
+          <button type="submit" class="sec-btn">Підписатися</button>
+        </form>
+      </div>
+    </div>
+</footer>
 </body>
 </html>

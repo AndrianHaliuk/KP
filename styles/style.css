@@ -225,6 +225,7 @@ body[data-loaded=true] header {
   font-size: 12px;
   white-space: wrap;
   color: #FFFFFF;
+  line-height: 21.1px;
 }
 
 .sub-title div {
@@ -305,11 +306,12 @@ h2 {
   align-items: center;
   gap: 25px;
   text-transform: uppercase;
-  height: 19px;
 }
-.line-container h3 {
+.line-container span {
   font-size: 16px;
   letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 18.75px;
 }
 
 .video-container {
@@ -1480,6 +1482,26 @@ button {
   z-index: 1000;
 }
 
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  height: 700px;
+}
+.error-wrapper h1 {
+  font-size: 64px;
+  color: #333;
+}
+.error-wrapper .sec-btn {
+  border: #333 1px solid;
+}
+
+.button-container .primary-btn {
+  margin-right: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .modal-content h2 {
     font-size: 40px;
@@ -1618,7 +1640,7 @@ button {
     font-size: 18px;
   }
   .sub-title {
-    margin: 205px 0px 0px 0px;
+    margin: 196px 0 0 0;
     padding-left: 0px;
   }
   .title {

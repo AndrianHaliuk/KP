@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Inclusive care for children with special needs">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,37 +22,35 @@
           <path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="1.5"/>
         </svg>
         </div>
-      <h2>Join as a volunteer</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique. </p>
-      <form class="contact-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
+        <h2>Долучіться як волонтер</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.</p>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">Ім'я</label>
+              <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Прізвище</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
+            <div class="form-group">
+              <label for="contact-email">Електронна пошта</label>
+              <input type="email" id="contact-email" name="contact-email">
+            </div>
+            <div class="form-group">
+              <label for="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="5" placeholder="Введіть ваше повідомлення"></textarea>
+            </div>
+          <div class="button-wrapper">
+            <button type="submit" class="primary-btn">Надіслати повідомлення</button>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="email">Email Id</label>
-            <input type="email" id="contact-email">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Type your Message"></textarea>
-        </div>
-        <div class="button-wrapper">
-            <button type="submit" class="primary-btn">Send message</button>
-        </div>
-    </form>
-    <div id="missClickWarning" class="miss-click-warning">Click inside the form to fill it out!</div>
+        </form>
+        <div id="missClickWarning" class="miss-click-warning">Клацніть всередині форми, щоб її заповнити!</div>        
     </div>
   </div>
-  <nav class="site-nav" id="navbar">
+  <nav class="site-nav" id="navbar" role="navigation">
     <div class="nav-container">
       <a href="index.html"><img src="img/logo.webp" alt="Логотип" class="logo" loading="lazy"></a>
       <ul class="nav-links">
@@ -70,7 +68,7 @@
       </div>
     </div>
   </nav>
-<header>
+<header role="banner">
     <div class="container">
      <div class="title">
         <h1>Інклюзивний догляд за дітьми з особливими потребами</h1>
@@ -80,7 +78,7 @@
               <svg class="playicon">
                 <use xlink:href="img/sprite.svg#Play icon"></use>
               </svg>
-              <a class="video-btn" href="video">Переглянути відео</a>
+              <a class="video-btn" href="https://img.youtube.com/vi/rkRyetRMrjQ/hqdefault.jpg">Переглянути відео</a>
           </div>
         </div>
     </div>
@@ -96,7 +94,7 @@
       <div class="section-title">
         <div class="line-container">
             <div class="line">
-            </div><h3>дізнайтеся про нас</h3>
+            </div><span>дізнайтеся про нас</span>
         </div>
         <h2>Ми надаємо місце для дітей з особливими потребами</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
@@ -137,7 +135,7 @@
     <div class="section-title">
       <div class="line-container">
         <div class="line">
-        </div><h3>що ми робимо</h3>
+        </div><span>що ми робимо</span>
       </div>
       <h2>Послуги, які ми надаємо нашим дітям</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
@@ -196,7 +194,7 @@
   <div class="project-container">
     <div class="line-container">
       <div class="line">
-      </div><h3>Проєкти, які ми реалізували</h3>
+      </div><span>Проєкти, які ми реалізували</span>
     </div>
    <h2>Ми створюємо місце, де діти з особливими потребами можуть процвітати</h2>
     <div class="projects">
@@ -374,7 +372,7 @@
   </div>
 </div>
 </section>
-<footer>
+<footer role="contentinfo">
     <div class="container">
       <a href="index.html"><img src="img/logo-white.webp" alt="Логотип" class="logo" loading="lazy"></a>
     <div class="footer-lists">
