@@ -1,18 +1,18 @@
 [
   {
-    "title": "Autism care day",
+    "title": "День турботи про дітей з аутизмом",
     "date": "15th Nov 2022",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
     "image": "img/autism.webp"
   },
   {
-    "title": "Down syndrome outreach",
+    "title": "Допомога дітям із синдромом Дауна",
     "date": "15th Nov 2022",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
     "image": "img/kid.webp"
   },
   {
-    "title": "Caring for children with cerebral palsy",
+    "title": "Догляд за дітьми з церебральним паралічем",
     "date": "15th Nov 2022",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.",
     "image": "img/celebral.webp"

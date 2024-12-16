@@ -1283,6 +1283,9 @@ footer .container a, footer .container ul li, footer .container .list-item {
   margin: 0 auto 96px;
   padding: 12px;
 }
+.contact-form #contact-email {
+  margin-bottom: 32px;
+}
 
 .form-row {
   display: flex;
@@ -1830,6 +1833,9 @@ button {
   }
   .what-we-do-second-section {
     height: 574px;
+  }
+  .media-first-section {
+    padding-top: 48px;
   }
   .media-first-section .container {
     height: 768px;

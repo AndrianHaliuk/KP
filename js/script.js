@@ -143,4 +143,4 @@ fetch('json/news.json')
       }
     });
   });
-  localStorage.removeItem("isVisited");
+  localStorage.removeItem("isVisited")

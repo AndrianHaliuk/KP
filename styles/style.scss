@@ -1165,8 +1165,10 @@ footer .container{
   width: 100%;
   margin: 0 auto 96px;
   padding: 12px;
+  #contact-email{
+    margin-bottom: 32px;
+  }
 }
-
 .form-row {
   display: flex;
   gap: 32px;
@@ -1364,6 +1366,7 @@ button {
   margin-right: 24px;
 }
 @media screen and (min-width: 768px) {
+  
   .modal-content h2 {
     font-size: 40px;
     line-height: 56px;
@@ -1693,6 +1696,9 @@ button {
 }
 .what-we-do-second-section{
   height: 574px;
+}
+.media-first-section{
+  padding-top: 48px;
 }
 .media-first-section .container{
   height: 768px;
